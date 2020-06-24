@@ -5,5 +5,13 @@ def key_for_min_value(name_hash)
   i = ""
   j = ""
   name_hash.each do |k,v|
-    
+    if i == ""
+      i = v 
+    else 
+      if v < i 
+        i = v 
+        j = k 
+      end 
+    end 
+  j 
 end
